@@ -33,11 +33,11 @@ icuuc_copts = [
     "-DU_COMMON_IMPLEMENTATION",
     "-DU_HAVE_STD_ATOMICS",
 ] + select({
-    "@icuuc//:darwin": [
+    "@com_github_dio_icuuc//:darwin": [
         "-Wno-shorten-64-to-32",
         "-Wno-unused-variable",
     ],
-    "@icuuc//:windows_x86_64": [
+    "@com_github_dio_icuuc//:windows_x86_64": [
         "/utf-8",
         "/DLOCALE_ALLOW_NEUTRAL_NAMES=0",
     ],
@@ -92,7 +92,7 @@ cc_library(
 
 cc_library(
     name = "data",
-    srcs = ["@icuuc//bazel/data:generated"],
+    srcs = ["@com_github_dio_icuuc//bazel/data:generated"],
     visibility = [
         "//visibility:public",
     ],

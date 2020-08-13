@@ -29,9 +29,9 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 def icuuc_repository():
     http_archive(
         name = "org_unicode_icuuc",
-        build_file = "@icuuc//bazel:icuuc.BUILD",
+        build_file = "@com_github_dio_icuuc//bazel:icuuc.BUILD",
         sha256 = "94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc",
         strip_prefix = "icu",
         url = "https://github.com/unicode-org/icu/releases/download/release-67-1/icu4c-67_1-src.tgz",
-        patches = ["@icuuc//bazel/data:udata.patch"],
+        patches = ["@com_github_dio_icuuc//bazel/data:udata.patch"],
     )
