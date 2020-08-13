@@ -28,7 +28,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 def icuuc_repository():
     http_archive(
-        name = "org_unicode_icuuc",
+        name = "org_unicode_icuuc_internal",
         build_file = "@com_github_dio_icuuc//bazel:icuuc.BUILD",
         sha256 = "94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc",
         strip_prefix = "icu",

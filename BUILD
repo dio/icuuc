@@ -46,10 +46,10 @@ config_setting(
 
 alias(
     name = "data",
-    actual = "@org_unicode_icuuc//:data",
+    actual = "@org_unicode_icuuc_internal//:data",
 )
 
 alias(
     name = "common",
-    actual = "@org_unicode_icuuc//:common",
+    actual = "@org_unicode_icuuc_internal//:common",
 )
