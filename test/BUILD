@@ -4,7 +4,7 @@ cc_binary(
     name = "test",
     srcs = ["test.c"],
     deps = [
-        "@icuuc//:common",
-        "@icuuc//:data",
+        "@com_github_dio_icuuc//:common",
+        "@com_github_dio_icuuc//:data",
     ],
 )
