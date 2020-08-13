@@ -22,10 +22,8 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-workspace(name = "icuuc")
+workspace(name = "com_github_dio_icuuc")
 
-load("//bazel:build.bzl", "icuuc_repository", "targets")
+load("//bazel:build.bzl", "icuuc_repository")
 
 icuuc_repository()
-
-targets()

@@ -43,3 +43,13 @@ config_setting(
         "cpu": "x64_windows",
     },
 )
+
+alias(
+    name = "data",
+    actual = "@org_unicode_icuuc//:data",
+)
+
+alias(
+    name = "common",
+    actual = "@org_unicode_icuuc//:common",
+)
