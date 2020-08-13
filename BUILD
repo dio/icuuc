@@ -22,8 +22,6 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-load("//bazel/build.bzl", "load_targets")
-
 package(
     default_visibility = ["//visibility:public"],
 )
@@ -45,5 +43,3 @@ config_setting(
         "cpu": "x64_windows",
     },
 )
-
-load_targets()

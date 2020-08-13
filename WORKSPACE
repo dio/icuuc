@@ -24,6 +24,8 @@
 
 workspace(name = "icuuc")
 
-load("//bazel:build.bzl", "icuuc_repository")
+load("//bazel:build.bzl", "icuuc_repository", "targets")
 
 icuuc_repository()
+
+targets()

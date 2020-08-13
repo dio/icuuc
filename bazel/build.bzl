@@ -36,7 +36,7 @@ def icuuc_repository():
         patches = ["@icuuc//bazel/data:udata.patch"],
     )
 
-def load_targets():
+def targets():
     native.bind(
         name = "common",
         actual = "@org_unicode_icuuc//:common",
