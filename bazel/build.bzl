@@ -35,3 +35,14 @@ def icuuc_repository():
         url = "https://github.com/unicode-org/icu/releases/download/release-67-1/icu4c-67_1-src.tgz",
         patches = ["@icuuc//bazel/data:udata.patch"],
     )
+
+def load_targets():
+    native.bind(
+        name = "common",
+        actual = "@org_unicode_icuuc//:common",
+    )
+    native.bind(
+        name = "data",
+        actual = "@org_unicode_icuuc//:common",
+    )
+

@@ -22,6 +22,8 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
+load("//bazel/build.bzl", "load_targets")
+
 package(
     default_visibility = ["//visibility:public"],
 )
@@ -44,12 +46,4 @@ config_setting(
     },
 )
 
-alias(
-    name = "common",
-    actual = "@org_unicode_icuuc//:common",
-)
-
-alias(
-    name = "data",
-    actual = "@org_unicode_icuuc//:data",
-)
+load_targets()
